@@ -1,5 +1,3 @@
-# @dimosbotsaris/express-async-handler
-
 <h1 align="center">Welcome to @dimosbotsaris/express-async-handler 👋</h1>
 <p>
   <a href="https://www.npmjs.com/package/@dimosbotsaris/express-async-handler" target="_blank">
