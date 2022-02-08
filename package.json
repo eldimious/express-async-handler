@@ -1,6 +1,6 @@
 {
   "name": "@dimosbotsaris/express-async-handler",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "description": "Simple middle to handle exceptions and catch error within express routes in asynchronous and pass them to your express error handlers.",
   "main": "lib/index.js",
