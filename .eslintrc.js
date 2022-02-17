@@ -1,19 +1,18 @@
 module.exports = {
   root: true,
   extends: [
-    'eslint-config-airbnb-base',
+    'airbnb-base',
+    'airbnb-typescript/base',
   ],
+  plugins: ['import', 'prettier'],
   parserOptions: {
-    ecmaVersion: 2020,
+    project: './tsconfig.eslint.json',
   },
   rules: {
     'no-underscore-dangle': [2, { allowAfterThis: true }],
     'class-methods-use-this': 0,
     strict: 0,
     'max-len': 0,
-    'new-cap': ['error', { newIsCapExceptionPattern: '^errors\..' }],
-    'import/prefer-default-export': 'off',
-    'no-useless-constructor': 'off',
-    'import/extensions': 'off',
+    'new-cap': ['error', { newIsCapExceptionPattern: '^errors\..' }]
   },
 };

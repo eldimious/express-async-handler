@@ -1,14 +1,14 @@
-const chai = require('chai');
-const sinon = require('sinon');
-const sinonChai = require('sinon-chai');
-const asyncWrapper = require('../src');
+import chai, { expect } from 'chai';
+import * as sinon from 'sinon';
+import sinonChai from 'sinon-chai';
+import { asyncWrapper } from '../src';
 
 const { expect } = chai;
 chai.use(sinonChai);
 
 describe('test asyncWrapper method', () => {
   it('should catch async function exception', async () => {
-    const error = new Error('error msg', 400)
+    const error = new Error('error msg');
     const foo = asyncWrapper(() => {
       throw error
     });
