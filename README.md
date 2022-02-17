@@ -27,10 +27,11 @@ npm install --save @dimosbotsaris/express-async-handler
 
 ## Usage
 
-```sh
-const asyncWrapper = require('@dimosbotsaris/express-async-handler');
+```ts
+import express, { Request, Response, NextFunction, Router } from 'express';
+import { asyncWrapper } from '@dimosbotsaris/express-async-handler';
 
-express.get('/', asyncWrapper(async (req, res, next) => {
+express.get('/', asyncWrapper(async (req: Request, res: Response, next: NextFunction) => {
   const baz = await foo.findAll();
   res.send(baz)
 }))
